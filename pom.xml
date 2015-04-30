@@ -13,6 +13,14 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <repositories>
+    <repository>
+        <id>project.local</id>
+        <name>project</name>
+        <url>file:${project.basedir}/lib</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <dependency>
@@ -47,8 +55,8 @@
     	<version>snapshot-20080530</version>
     </dependency>
     <dependency>
-    	<groupId>rabin-hash-function-2.0</groupId>
-    	<artifactId>rabin-hash-function-2.0</artifactId>
+    	<groupId>com.planetj.math.rabinhash</groupId>
+    	<artifactId>rabin-hash-function</artifactId>
     	<version>2.0</version>
     </dependency>
   </dependencies>
